@@ -9,7 +9,7 @@ function App() {
 
 
   async function fetchWeatherData(place) {
-    const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${place}&aqi=no`;
+    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${place}&aqi=no`;
     const response = await fetch(apiUrl);
     if (!response.ok) {
       throw new Error(`Failed to fetch weather data for ${place}`);
